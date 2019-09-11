@@ -36,3 +36,7 @@ module.exports = {
 - state의 분류를 항상 유의할 것
 
 - value와 onchange는 세트, onchange가 아니라면 defaultvalue
+
+- hooks를 사용하면 this를 쓰지 않아도 된다. render() 함수 역시 생략
+
+- 간결함 부분에서 hooks를 추천, 하지만 그룹화된 부분에서는 class도 나쁘지 않다.
