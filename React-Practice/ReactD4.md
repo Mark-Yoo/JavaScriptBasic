@@ -32,3 +32,7 @@ module.exports = {
 
 - babel을 이용한다고 하더라고 구버전 브라우저로 갈수록 속도가 느려지고 컨버팅이 어려워진다.
   - babel에는 이를 이용하기 위한 버전 선택과 각 나라별 브라우저별 사용자를 구별하여 설정할 수 있게 되어있다. (꿀팁)
+
+- state의 분류를 항상 유의할 것
+
+- value와 onchange는 세트, onchange가 아니라면 defaultvalue
