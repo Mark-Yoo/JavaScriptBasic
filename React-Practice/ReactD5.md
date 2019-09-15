@@ -39,3 +39,13 @@ export default NumberBaseball;  // 한 번만 사용가능
 ## Try의 사용
 - try를 활용하면 반복되는 코드를 줄여서 사용 할 수 있다.
 - 재사용성과 성능 최적화에도 도움을 준다.
+- try로 바꾸면 v, i가 전달이 되지 않는다.
+- 이를 받기 위해서 props 가 필요하다.
+- html에서는 attribute, 리액트에서는 props
+```
+return {
+  <Try value={v} index={i} />
+}
+```
+- props를 사용하면 부모관계가 생긴다(앵귤러의 component와 같은 개념)
+- props가 있다는건 부모가 존재한다는 점
