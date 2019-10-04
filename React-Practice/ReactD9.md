@@ -9,3 +9,4 @@
 - useMemo: 복잡한 함수 결과값을 기억
 - useRef: 일반 값을 기억
 - useCallback 안에서 state를 사용할 때에는 주의를 하지 않으면 계속 처음 값만을 기억하게 된다. 이러한 문제를 방지하기 위해서 useCallback의 두번째 인자로 바뀌는 state를 넣어주어야 한다.
+- useCallback이 없으면 매번 새로운 함수가 생성되는데, 이럴 때에는 부모가 계속 새로운 prop을 준다고 받아들여서 rerendering을 하는 문제가 생긴다.
