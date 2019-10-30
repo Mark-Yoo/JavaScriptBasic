@@ -35,3 +35,5 @@ function solution(board)
     return area;
 }
 ```
+
+- 2차원 배열로 만드는 정사각형
