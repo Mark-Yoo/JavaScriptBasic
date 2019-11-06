@@ -34,3 +34,7 @@ const name = undefined;
 
 return <div>{name}</div>
 ```
+
+- 리액트에서 DOM요소나 jsx내부에서 style을 사용할 경우 일반적인 css문법인 케밥케이스 대신 카멜케이스를  사용한다.
+
+- class 대신 className을 사용한다. class를 사용하면 jsx 요소들의 class와 일반 class에서 구별이 어려우므로 이러한 방법을 사용한다.
