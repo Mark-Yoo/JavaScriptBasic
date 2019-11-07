@@ -22,3 +22,30 @@ class Counter extends Component {
   }
 }
 ```
+
+- 배열 비구조화 할당
+  - 배열 역시 비구조화 할당이 가능하다.
+```
+const arrays = [1, 2];
+const [one, two] = arrays;
+```
+
+- Hooks의 사용
+  - useState 사용하기
+```
+import {useState} from 'react';
+
+const Say = () => {
+  const [message, setMessage] = setState('');
+
+  const onClickEnter = () => setMessage('안녕');
+
+  return (
+    <div>
+      <h1>{message}</h1>
+      <button onClick={onClickEnter}>
+    </div>
+  )
+}
+
+```
