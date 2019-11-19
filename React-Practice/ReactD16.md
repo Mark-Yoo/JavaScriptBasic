@@ -12,5 +12,5 @@ constructor -> getDerivedStateFromProps -> render -> componentDidMount
 - 업데이트를 발생시키는 요인
   1. props 변경 2. state 변경 3. 부모 컴포넌트 리렌더링 -> getDerivedStateFromProps -> shouldComponentUpdate -> render -> getSnapshopBeforeUpdate -> componentDidUpdate
 3. 언마운트 -컴포넌트를 DOM에서 제거하는 것
+  - componentWillUnmount: 컴포넌트가 웹 브라우저상에서 사라지기 전에 호출하는 메서드
 ```
-
