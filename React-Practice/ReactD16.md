@@ -14,3 +14,6 @@ constructor -> getDerivedStateFromProps -> render -> componentDidMount
 3. 언마운트 -컴포넌트를 DOM에서 제거하는 것
   - componentWillUnmount: 컴포넌트가 웹 브라우저상에서 사라지기 전에 호출하는 메서드
 ```
+
+## 라이프사이클 메서드 사용하는 법
+- 어떤 단계에서 에러가 잡히는지 알내고 미리 처리할 수 있다.
