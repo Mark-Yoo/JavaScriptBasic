@@ -17,3 +17,5 @@ constructor -> getDerivedStateFromProps -> render -> componentDidMount
 
 ## 라이프사이클 메서드 사용하는 법
 - 어떤 단계에서 에러가 잡히는지 알내고 미리 처리할 수 있다.
+
+- 어떤 단계에서 어떤 동작을 할 것인지 세부적으로 설정이 가능하다.
