@@ -19,3 +19,4 @@ constructor -> getDerivedStateFromProps -> render -> componentDidMount
 - 어떤 단계에서 에러가 잡히는지 알내고 미리 처리할 수 있다.
 
 - 어떤 단계에서 어떤 동작을 할 것인지 세부적으로 설정이 가능하다.
+  - 컴포넌트 업데이트의 성능을 개선할 때에는 shouldComponentUpdate가 중요하게 사용된다.
