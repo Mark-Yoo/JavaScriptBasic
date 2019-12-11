@@ -13,4 +13,22 @@ ver.1에서 만들어진 todolist에 많은 양의 데이터가 할당될 때에
 - Performance 녹화 버튼 누르고 실행이 끝난 다음 정확한 수치로 확인 할 수 있다.
 
 ## React.memo를 활용한 성능 최적화
--
+- shouldComponentUpdate 라이프 사이클을 사용 (함수형에서는 사용 불가)
+- 이를 위한 React.memo 함수
+- 컴포넌트의 props가 바뀌지 않았다면 리렌더링 하지 않도록 설정
+```
+export default React.memo(component);
+```
+위는 1차적인 방법으로, 최적화가 단순히 끝나지 않음.
+onRemove, onToggle도 최신 todos의 상태를 참조하고 있으므로 todos 배열이 변경될 때마다 리렌더링 됨.
+- 이를 위한 useState 함수형 업데이트 혹은 useReducer
+
+## useState 함수형 업데이트
+- 새로운 상태를 파라미터로 넣는 대신, 상태 업데이트를 어떻게 할 것인지 정의해 주는 업데이트 함수를 넣을 수도 있음.(함수형 업데이트)
+```
+const [state, setState] = useState(0);
+
+const onChange = useCallBack(
+  () => setState(prevState => prevState + 1);
+)
+```
