@@ -1,20 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-<script>
-function initialBingoState() {
+const initialBingoState = () => {
   const numbersArray = [];
   // 5 * 5의 빙고칸을 만들어야 하므로 빈 배열에 25개 객체를 넣어준다.
   for(let i=1; i<=25; i++) {
     numbersArray.push(i);
   };
-
+  console.log(numbersArray);
   // 위에서 1부터 25까지의 숫자가 순서대로 배열에 들어갔지만 빙고는 각 칸마다 랜덤한 숫자를 가져야 하므로 새로운 랜덤 숫자 배열을 담을 빈 배열을 만든다.
   const randomNumbersArray = [];
   // 25개의 칸을 5칸씩 나눠 5개의 새로운 배열을 만들 것이므로 bingoRow라는 배열을 만들어 for문을 한 번 돌 때마다 초기화 시켜준다.
@@ -28,10 +18,8 @@ function initialBingoState() {
     // 두 번째 for문이 끝나고나서 만들어진 하나의 bingoRow를 randomNumbersArray 배열에 push 해서 하나의 row를 완성한다. (이를 5번 반복한다.)
     randomNumbersArray.push(bingoRow);
   }
+  console.log(randomNumbersArray);
   return randomNumbersArray;
 }
+
 initialBingoState();
-</script> 
-<h1 id="bingoCount">빙고갯수</h1>
-</body>
-</html>
